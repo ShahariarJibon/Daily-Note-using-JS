@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="mcontainer">
+    <div class="title">
+      <div class="heading">
+        <h1>DAILY NOTE TAKE</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="options">
+        <button class="create">Create</button>
+        <button class="favourite">Favourites</button>
+        <button class="completed">Completed</button>
+        <button class="done">Mark Done</button>
+        <button class="delete">Delete</button>
+        <button class="dark"><i class="fa fa-moon-o"></i></button>
+      </div>
+
+
+      <div class="notes-container">
+        <div class="search-bar">
+
+  <div class="search-wrapper">
+
+    <input
+      type="text"
+      placeholder="Search notes..."
+      class="search"
+    />
+
+    <div class="category-dropdown" id="categoryDropdown" style="border-radius: 50%;">
+
+      <button class="category-toggle" type="button">
+        <span class="category-selected">Category</span>
+        <i class="fa fa-chevron-down"></i>
+      </button>
+
+      <div class="category-menu">
+
+        <div class="category-option" data-value="all">All</div>
+        <div class="category-option" data-value="personal">Personal</div>
+        <div class="category-option" data-value="study">Study</div>
+        <div class="category-option" data-value="work">Work</div>
+        <div class="category-option" data-value="ideas">Ideas</div>
+        <div class="category-option" data-value="important">Important</div>
+        <div class="category-option" data-value="other">Other</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+        <div class="notes"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="note-overlay">
+    <div class="note-modal">
+      <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <h2>Create Note</h2>
+        
+        <div class="category-dropdown" id="noteCategoryDropdown">
+
+          <button class="category-toggle" type="button">
+            <span class="category-selected">Category</span>
+            <i class="fa fa-chevron-down"></i>
+          </button>
+
+          <div class="category-menu">
+
+            <div class="category-option" data-value="personal">Personal</div>
+            <div class="category-option" data-value="study">Study</div>
+            <div class="category-option" data-value="work">Work</div>
+            <div class="category-option" data-value="ideas">Ideas</div>
+            <div class="category-option" data-value="important">Important</div>
+            <div class="category-option" data-value="other">Other</div>
+
+          </div>
+
+        </div>
+        
+      </div>
+      
+      <input type="text" placeholder="enter title" id="title" />
+      <textarea name="" id="textArea" placeholder="enter text"></textarea>
+      <div class="button">
+        <div class="color">
+          <ol>
+            <li class="color1">#FFF5F5</li>
+            <li class="color2">#CCFBFA</li>
+            <li class="color3">#DDEB9D</li>
+            <li class="color4">#C8DFDB</li>
+            <li class="color5">#BDB2FF</li>
+            <li class="color6">#FFFFFF</li>
+          </ol>
+        </div>
+        <button class="can" id="cancel">Cancel</button>
+        <button class="save" id="save">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="read-overlay">
+    <div class="read-card">
+      <div class="title2">
+        <h2 class="written-title"></h2>
+
+        <div class="title-buttons">
+
+          <button class="pin">
+            <i class="fa fa-thumb-tack"></i>
+          </button>
+
+          <button class="star">
+            <i class="fa fa-star-o"></i>
+          </button>
+
+          <button class="edit">
+            <i class="fa fa-edit"></i>
+          </button>
+        </div>
+      </div>
+
+      <p class="description"></p>
+      <button class="close">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
