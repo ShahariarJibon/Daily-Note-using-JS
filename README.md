@@ -112,4 +112,4 @@ MIT License - feel free to use this project for learning or personal use.
 ## Author
 
 **Shahariar Jibon**
-- GitHub: [@ShahariarJibon](https://github.com/ShahariarJibon)
+- GitHub: [@ShahariarJibon](https://github.com/ShahariarJibon)# Daily-Note-using-JS
