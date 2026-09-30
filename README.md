@@ -2,6 +2,8 @@
 
 A modern, feature-rich note-taking application built with vanilla JavaScript, HTML, and CSS.
 
+https://shahariarjibon.github.io/Daily-Note-using-JS/
+
 ## Features
 
 - **Create Notes** - Add titles, content, and customize with colors
